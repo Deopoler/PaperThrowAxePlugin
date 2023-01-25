@@ -1,0 +1,19 @@
+name: ${pluginName}
+version: ${version}
+main: ${group}.${packageName}.plugin.${pluginName}Plugin
+api-version: 1.19
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}
+  - org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}
+  - org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}
+  - io.github.monun:heartbeat-coroutines:${heartBeatCoroutinesVersion}
+
+commands:
+  giveaxe:
+    description: Give A Throwing Axe
+    usage: /<command>
+    permission: throwaxe.giveaxe
+
+permissions:
+  throwaxe.giveaxe:
+    default: true
