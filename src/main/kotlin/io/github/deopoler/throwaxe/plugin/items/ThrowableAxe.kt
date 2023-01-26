@@ -42,7 +42,7 @@ object ThrowableAxe {
         armorStand.apply {
             setArms(true)
             setGravity(false)
-            isVisible = true
+            isVisible = false
             isSmall = true
             isMarker = true
             setItem(EquipmentSlot.HAND, item)
