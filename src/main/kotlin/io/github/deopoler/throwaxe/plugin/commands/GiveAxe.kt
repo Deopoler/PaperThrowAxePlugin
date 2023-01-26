@@ -1,6 +1,6 @@
 package io.github.deopoler.throwaxe.plugin.commands
 
-import io.github.deopoler.throwaxe.plugin.items.ThrowingAxe
+import io.github.deopoler.throwaxe.plugin.items.ThrowableAxe
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
@@ -11,7 +11,7 @@ object GiveAxe:CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         if (sender is Player)
         {
-            sender.inventory.addItem(ThrowingAxe.item)
+            sender.inventory.addItem(ThrowableAxe.item)
         }
         else{
             sender.sendMessage("Only player can run this command.")

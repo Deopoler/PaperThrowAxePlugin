@@ -1,14 +1,10 @@
 package io.github.deopoler.throwaxe.plugin.events
 
-import io.github.deopoler.throwaxe.plugin.items.ThrowingAxe
-import org.bukkit.entity.ArmorStand
-import org.bukkit.entity.EntityType
+import io.github.deopoler.throwaxe.plugin.items.ThrowableAxe
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.Action
 import org.bukkit.event.player.PlayerInteractEvent
-import org.bukkit.inventory.EquipmentSlot
-import org.bukkit.util.EulerAngle
 
 object ThrowingAxeEvent: Listener {
     @EventHandler
@@ -18,9 +14,9 @@ object ThrowingAxeEvent: Listener {
         {
             val player = event.player
             val item = event.item
-            if (item != null && item == ThrowingAxe.item)
+            if (item != null && item == ThrowableAxe.item)
             {
-                ThrowingAxe.throwAxe(player)
+                ThrowableAxe.throwAxe(player)
             }
         }
     }
