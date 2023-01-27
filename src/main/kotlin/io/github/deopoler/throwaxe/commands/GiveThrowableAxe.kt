@@ -1,6 +1,6 @@
-package io.github.deopoler.throwaxe.plugin.commands
+package io.github.deopoler.throwaxe.commands
 
-import io.github.deopoler.throwaxe.plugin.items.ThrowableAxe
+import io.github.deopoler.throwaxe.items.ThrowableAxe
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
